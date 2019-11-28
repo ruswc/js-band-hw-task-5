@@ -1,0 +1,11 @@
+@import "scss/utils/vars";
+@import "scss/utils/mixins";
+@import "scss/modules/form";
+@import "scss/modules/page";
+
+body {
+  background: $colorSecondary;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
