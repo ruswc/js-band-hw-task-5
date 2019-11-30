@@ -1,16 +1,17 @@
-# Homework 4
-## js-band-hw-task-4
+# Homework 5
+## js-band-hw-task-5
 
-> Our PoC looks nice for the client and we should start preparation for the project development. We should define quality processes and tools and prepare our project for effective development.
+> We prepared quality checking systems, like eslint, jest and now. We should prepare CI/CD setting for more effective delivery process. We are going to prepare it for our PoC. And additionally, we should start to write unit tests.
 
 
 ### Objectives
-- Add eslint to our project
-- Add commitizen tool to improve commit messages and log history
-- Add and setup Jest for implementing autotest
-- Add Webpack config for dev prod and common
-- Describe application launch process and commands what we have
-- Describe structure of our project
+- add eslint to our project
+- prepare travis-CI pipeline settings
+- add installation step
+- add linter step
+- add automation tests step and add coverage report
+- add deployment to the GitHub pages
+- implement tests for our functionality
 
 **Implemented:**
 - "Eslint" added
@@ -20,43 +21,6 @@
 - Described application launch process and commands what we have (below)
 - Described structure of our project
 
-#### **To run Eslint:**
-- run the command *eslint [ folder / file ]* in the terminal
-- to fix the errors automatically, add the *--fix* flag
-
-**example:**
-> eslint src --fix
-
-**To run commit via *commitizen*:**
-- run the command *git cz* in the terminal
-- Following the prompts in the terminal and using the cursor keys, select the settings you want for the future commit
-- Following the prompts in the terminal add a description of the fields that you think are necessary
-- After the changes the following commands:
-    - git add .
-    - git-cz
-    - git push
-
-**example:**
-```
- git add .
- git-cz
- git push
-```
-
-
-![The appearance of the terminal when working with commitizen](https://github.com/ruswc/js-band-hw-task-4/blob/master/gitcz.png)
-
-#### **To run *Jest*:**
-- run the command *jest [ file name ]* in the terminal
-- The test results are displayed in the console
-
-**example:**
-```
- jest three.test.js
-```
-![The appearance of the terminal when working with jest](https://github.com/ruswc/js-band-hw-task-4/blob/master/jesttest.png)
-
-**The application can be checked at:** https://ruswc.github.io/js-band-hw-task-4/public/index.html
 
 #### Structure of the project
 

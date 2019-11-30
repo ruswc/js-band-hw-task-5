@@ -1,5 +1,5 @@
 export var clearFormField = function clearFormField(elements) {
-  for (var i = 0, { length } = elements; i < length; i++) {
+  for (let i = 0, { length } = elements; i < length; i += 1) {
     if (elements[i].type === 'text' || elements[i].type === 'select-one') {
       elements[i].value = '';
     }
@@ -15,16 +15,15 @@ export function renderList() {
   // clean container
   container.innerHTML = '';
 
-  for (var i = 0, { length } = allTransportIndexes; i < length; i++) {
+  for (let i = 0, { length } = allTransportIndexes; i < length; i += 1) {
     const plate = document.createElement('div');
     plate.classList.add('plate');
-    var obj = JSON.parse(localStorage.getItem(allTransportIndexes[i]));
-    for (var key in obj) {
+    const obj = JSON.parse(localStorage.getItem(allTransportIndexes[i]));
+    for (const key in obj) {
       if (key !== 'unique') {
         plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
       }
     }
     container.append(plate);
   }
-
 }
