@@ -1,11 +1,10 @@
 import { clearFormField } from '../../helpers/common.helper';
 
 export class Transport {
-
   static _randVal(min, max) {
     const rand1 = min + Math.random() * (max + 1 - min);
     const rand2 = min + Math.random() * (max + 1 - min);
-    return 'jsbanddelivery' + Math.floor(rand1) + Math.floor(rand2);
+    return `jsbanddelivery${Math.floor(rand1)}${Math.floor(rand2)}`;
   }
 
   constructor(options, unique = Transport._randVal(0, 200000)) {
@@ -24,19 +23,17 @@ export class Transport {
   }
 
   saveInLocalStorage() {
-
-    var stor = Object.values(localStorage);
-    var result = stor.find((x) => (x.indexOf(this.id) !== -1));
+    const stor = Object.values(localStorage);
+    const result = stor.find((x) => (x.indexOf(this.id) !== -1));
     if (result) {
       console.warn('This object already exist');
     } else {
       localStorage.setItem(Transport._name + Transport._count, JSON.stringify(this));
     }
-
   }
 
   showCapacityInPounds() {
-    return (this.capacity * 2.20462262) + 'lb';
+    return `${this.capacity * 2.20462262}lb`;
   }
 
   showAverageSpeed() {
@@ -51,10 +48,10 @@ export class Transport {
 // static property
 Transport._count = 0;
 
-var keys = Object.keys(localStorage);
-var allTransportIndexes = keys.filter((val) => val.indexOf('jsbandtransport') !== -1);
-var indexes = allTransportIndexes.map((x) => +(x.replace('jsbandtransport', '')));
-var maxIndex = Math.max(...indexes);
+const keys = Object.keys(localStorage);
+const allTransportIndexes = keys.filter((val) => val.indexOf('jsbandtransport') !== -1);
+const indexes = allTransportIndexes.map((x) => +(x.replace('jsbandtransport', '')));
+const maxIndex = Math.max(...indexes);
 
 if (indexes.length > 0) {
   Transport._count = maxIndex + 1;

@@ -7,7 +7,6 @@ import { saveTruck } from '../models/Truck';
 
 export class ViewForm {
   constructor() {
-
     // The root element for forms
     this.app = this._getElement('#forms');
 
@@ -149,7 +148,6 @@ export class ViewForm {
 
     this.costForm.append(this.allModelLabel, this.allModelSelector, this.costByKgLabel, this.costByKg, this.costByKmLabel, this.costByKm, this.costSubmitButton);
     this.app.append(this.costForm);
-
   }
 
   // Create an element with an optional CSS class

@@ -13,7 +13,7 @@ export class TransportFormFactory {
         capacity: 'shipcapacity',
         averageSpeed: 'shipavgspeed',
         countOfTeam: 'countofteam',
-        serialNumberOrName: 'serialnumber'
+        serialNumberOrName: 'serialnumber',
       });
     }
     if (type === 'truck') {
@@ -26,7 +26,7 @@ export class TransportFormFactory {
         producedYear: 'truckproducedyear',
         capacity: 'truckcapacity',
         averageSpeed: 'truckavgspeed',
-        typeOfGas: 'typeofgas'
+        typeOfGas: 'typeofgas',
       });
     }
     // if (type === 'cost') {

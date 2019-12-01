@@ -10,7 +10,7 @@ class Truck extends Transport {
   }
 
   showAverageSpeed() {
-    return super.showAverageSpeed() + 'km';
+    return `${super.showAverageSpeed()}km`;
   }
 }
 
@@ -21,7 +21,7 @@ const DEFAULT_TRUCK = new Truck({
   producedYear: '2018',
   capacity: '50000',
   averageSpeed: '130',
-  typeOfGas: 'gasoline'
+  typeOfGas: 'gasoline',
 });
 DEFAULT_TRUCK.saveInLocalStorage();
 
@@ -29,7 +29,6 @@ renderList();
 
 // new truck creation
 export var saveTruck = function saveTruck() {
-
   const jsbanddelivery = new Truck({
     id: truckid.value,
     model: truckmodel.value,
@@ -37,7 +36,7 @@ export var saveTruck = function saveTruck() {
     producedYear: truckproducedyear.value,
     capacity: truckcapacity.value,
     averageSpeed: truckavgspeed.value,
-    typeOfGas: typeofgas.value
+    typeOfGas: typeofgas.value,
   });
 
   console.log(`%c Average Speed of ${jsbanddelivery.model}`, 'color:purple;font-weight:bold;font-size:15px');
@@ -47,7 +46,7 @@ export var saveTruck = function saveTruck() {
 
   jsbanddelivery.saveInLocalStorage();
 
-  var { elements } = document.getElementById('truckform');
+  const { elements } = document.getElementById('truckform');
   clearFormField(elements);
 
   renderList();

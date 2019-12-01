@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
     "build": "webpack --config ./config/webpack.build.conf.js",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./src --fix"
   },
   "browserslist": [
     "> 1%",

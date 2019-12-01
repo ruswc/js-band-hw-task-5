@@ -56,7 +56,7 @@ export var saveCost = function saveCost() {
   const cost = new Cost({
     transportModel: transportmodel.value,
     costPerKg: costbykg.value,
-    costPerKm: costbykm.value
+    costPerKm: costbykm.value,
   });
 
   cost.saveInLocalStorage();
