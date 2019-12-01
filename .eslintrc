@@ -2,28 +2,39 @@
 // Copy this file, and add rule overrides as needed.
 {
   "extends": "airbnb",
-
-  /**
-   * Overrides to the airbnb rules
-   */
+  //   Overrides to the airbnb rules
+  "globals": {
+    "localStorage": true,
+    "fetch": true,
+    "document": true
+  },
   "rules": {
-
-    /* "func-names": 0,
-     "comma-dangle": [2, "never"],
-     "no-undef": [2],
-     "no-undefined": 1,
-     "no-underscore-dangle": 0,
-     "no-use-before-define": 0,
-     // http://eslint.org/docs/rules/prefer-const
-     "prefer-const": 1,
-     // http://eslint.org/docs/rules/no-unused-vars.html
-     "no-unused-vars": [1, {"vars": "all", "args": "after-used"}],
-     "padded-blocks": [0, "always"],
-     "no-var": 0, // Node 4 tweak for tests
-     // TODO: enable these again
-     "prefer-arrow-callback": 0,
-     "prefer-template": 0,
-     "no-param-reassign": 0
-     */
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "global-require": 0,
+    "func-names": 0,
+    "max-len": ["error", {"code": 400, "ignoreUrls": true}],
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "no-undef": [
+      0
+    ],
+    "no-undefined": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "prefer-const": 1,
+    "padded-blocks": [
+      0,
+      "always"
+    ],
+    "no-var": 0,
+    "prefer-arrow-callback": 0,
+    "prefer-template": 0,
+    "no-param-reassign": 0,
+    "no-prototype-builtins": "off",
+    "import/prefer-default-export": "off"
   }
 }

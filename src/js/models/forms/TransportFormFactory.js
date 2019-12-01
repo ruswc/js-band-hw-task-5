@@ -3,6 +3,7 @@ import { TruckForm } from './TruckForm';
 
 export class TransportFormFactory {
   create(type) {
+    this.create = this.create.bind(this);
     if (type === 'ship') {
       return new ShipForm({
         formId: 'shipform',
@@ -13,7 +14,7 @@ export class TransportFormFactory {
         capacity: 'shipcapacity',
         averageSpeed: 'shipavgspeed',
         countOfTeam: 'countofteam',
-        serialNumberOrName: 'serialnumber',
+        serialNumberOrName: 'serialnumber'
       });
     }
     if (type === 'truck') {
@@ -26,11 +27,12 @@ export class TransportFormFactory {
         producedYear: 'truckproducedyear',
         capacity: 'truckcapacity',
         averageSpeed: 'truckavgspeed',
-        typeOfGas: 'typeofgas',
+        typeOfGas: 'typeofgas'
       });
     }
     // if (type === 'cost') {
     //     return new CostForm({})
     // }
+    return true;
   }
 }

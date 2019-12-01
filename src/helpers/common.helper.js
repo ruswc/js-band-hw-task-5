@@ -1,4 +1,4 @@
-export var clearFormField = function clearFormField(elements) {
+export const clearFormField = function clearFormField(elements) {
   for (let i = 0, { length } = elements; i < length; i += 1) {
     if (elements[i].type === 'text' || elements[i].type === 'select-one') {
       elements[i].value = '';
@@ -11,7 +11,6 @@ export function renderList() {
   const keys = Object.keys(localStorage);
   const allTransportIndexes = keys.filter((val) => val.indexOf('jsbandtransport') !== -1);
   const container = document.getElementById('listoftransport');
-
   // clean container
   container.innerHTML = '';
 
@@ -19,11 +18,24 @@ export function renderList() {
     const plate = document.createElement('div');
     plate.classList.add('plate');
     const obj = JSON.parse(localStorage.getItem(allTransportIndexes[i]));
-    for (const key in obj) {
+
+    // Object.keys(allTransportIndexes).forEach((key) => {
+    //   if (key !== 'unique') {
+    //     plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
+    //   }
+    // });
+
+    Object.keys(obj).forEach((key) => {
       if (key !== 'unique') {
         plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
       }
-    }
+    });
+
+    // for (const key in obj) {
+    //   if (key !== 'unique') {
+    //     plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
+    //   }
+    // }
     container.append(plate);
   }
 }

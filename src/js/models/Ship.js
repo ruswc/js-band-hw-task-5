@@ -15,7 +15,7 @@ class Ship extends Transport {
 }
 
 // new ship creation
-export var saveShip = function saveShip() {
+export const saveShip = function saveShip() {
   const jsbanddelivery = new Ship({
     id: idofship.value,
     model: shipmodel.value,
@@ -23,7 +23,7 @@ export var saveShip = function saveShip() {
     producedYear: shipproducedyear.value,
     capacity: shipcapacity.value,
     averageSpeed: shipavgspeed.value,
-    countOfTeam: countofteam.value,
+    countOfTeam: countofteam.value
   });
 
   console.log(`%c Average Speed of ${jsbanddelivery.model}`, 'color:skyblue;font-weight:bold;font-size:15px');
@@ -46,6 +46,6 @@ const DEFAULT_SHIP = new Ship({
   producedYear: '2019',
   capacity: '400000',
   averageSpeed: '40',
-  countOfTeam: '250',
+  countOfTeam: '250'
 });
 DEFAULT_SHIP.saveInLocalStorage();

@@ -30,21 +30,28 @@ if (indexes.length > 0) {
 // render list
 function renderList() {
   const keys = Object.keys(localStorage);
-  const allTransportIndexes = keys.filter((val) => val.indexOf('jsbandcost') !== -1);
+  const transpIndexes = keys.filter((val) => val.indexOf('jsbandcost') !== -1);
   const listContainer = document.getElementById('costlist');
 
   // clean container
   listContainer.innerHTML = '';
 
-  for (let i = 0, { length } = allTransportIndexes; i < length; i++) {
+  for (let i = 0, { length } = transpIndexes; i < length; i += 1) {
     const plate = document.createElement('div');
     plate.classList.add('plate');
-    const obj = JSON.parse(localStorage.getItem(allTransportIndexes[i]));
-    for (const key in obj) {
+    const obj = JSON.parse(localStorage.getItem(transpIndexes[i]));
+
+    Object.keys(obj).forEach((key) => {
       if (key !== 'unique') {
         plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
       }
-    }
+    });
+
+    // for (const key in obj) {
+    //   if (key !== 'unique') {
+    //     plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
+    //   }
+    // }
 
     listContainer.append(plate);
   }
@@ -52,11 +59,11 @@ function renderList() {
 
 renderList();
 
-export var saveCost = function saveCost() {
+export const saveCost = function saveCost() {
   const cost = new Cost({
     transportModel: transportmodel.value,
     costPerKg: costbykg.value,
-    costPerKm: costbykm.value,
+    costPerKm: costbykm.value
   });
 
   cost.saveInLocalStorage();

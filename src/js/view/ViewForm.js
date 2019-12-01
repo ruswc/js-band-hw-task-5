@@ -152,6 +152,7 @@ export class ViewForm {
 
   // Create an element with an optional CSS class
   _createElement(tag, className) {
+    this._createElement = this._createElement.bind(this);
     const element = document.createElement(tag);
     if (className) element.classList.add(className);
     return element;
@@ -159,6 +160,7 @@ export class ViewForm {
 
   // Retrieve an element from the DOM
   _getElement(selector) {
+    this._getElement = this._getElement.bind(this);
     return document.querySelector(selector);
   }
 
