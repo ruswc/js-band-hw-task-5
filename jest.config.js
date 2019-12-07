@@ -11,6 +11,7 @@ module.exports = {
     '!**/cover/**',
     '!**/coverage/**',
     '!**/forms/**',
+    '!**/public/**',
     '!**/jest/**',
     '!**/view/**',
     '!jest.config.js',
