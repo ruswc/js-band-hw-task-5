@@ -19,7 +19,5 @@
 - added installation step
 - added linter step
 - add automation tests step and add coverage report
-- encountered difficulties while setting up jest - project coverage does not reach 40% with tests,
-so the following points ("add deployment to the GitHub pages" and
-"implement tests for our functionality") weren't done
+- Test coverage reaches about 40%
 
