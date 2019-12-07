@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575681495094" clover="3.2.0">
-  <project timestamp="1575681495095" name="All files">
-    <metrics statements="119" coveredstatements="56" conditionals="13" coveredconditionals="5" methods="34" coveredmethods="11" elements="166" coveredelements="72" complexity="0" loc="119" ncloc="119" packages="5" files="11" classes="11"/>
+<coverage generated="1575682900054" clover="3.2.0">
+  <project timestamp="1575682900054" name="All files">
+    <metrics statements="118" coveredstatements="55" conditionals="13" coveredconditionals="5" methods="33" coveredmethods="10" elements="164" coveredelements="70" complexity="0" loc="118" ncloc="118" packages="5" files="11" classes="11"/>
     <package name="src">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="C:\Users\Developer2\Desktop\js-band-hw-task-5\src\index.js">
@@ -29,7 +29,7 @@
       </file>
     </package>
     <package name="src.js.models">
-      <metrics statements="108" coveredstatements="53" conditionals="13" coveredconditionals="5" methods="31" coveredmethods="9"/>
+      <metrics statements="107" coveredstatements="52" conditionals="13" coveredconditionals="5" methods="30" coveredmethods="8"/>
       <file name="Cost.js" path="C:\Users\Developer2\Desktop\js-band-hw-task-5\src\js\models\Cost.js">
         <metrics statements="33" coveredstatements="18" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="2"/>
         <line num="5" count="1" type="stmt"/>
@@ -88,8 +88,7 @@
         <line num="30" count="0" type="stmt"/>
       </file>
       <file name="Model.js" path="C:\Users\Developer2\Desktop\js-band-hw-task-5\src\js\models\Model.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="Ship.js" path="C:\Users\Developer2\Desktop\js-band-hw-task-5\src\js\models\Ship.js">
         <metrics statements="16" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
