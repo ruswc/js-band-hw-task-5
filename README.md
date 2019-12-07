@@ -21,3 +21,4 @@
 - add automation tests step and add coverage report
 - Test coverage reaches about 40%
 
+
