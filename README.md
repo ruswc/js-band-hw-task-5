@@ -20,5 +20,20 @@
 - added linter step
 - add automation tests step and add coverage report
 - Test coverage reaches about 40%
+- Travis CI - build passing
+
+### Commands
+
+**Development:**
+> npm run dev
+
+**Build:**
+> npm run build
+
+**Linter:**
+> npm run lint
+
+**Tests:**
+> npm run test
 
 **The application can be checked at:** https://ruswc.github.io/js-band-hw-task-5/index.html
