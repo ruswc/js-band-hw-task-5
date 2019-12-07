@@ -15,36 +15,11 @@
 
 **Implemented:**
 - "Eslint" added
-- "Commitizen" added. The repository is made "commitizen friendly"
-- "Jest' added. Two test tests have been written (first - successful, second - unsuccessful). Test folder is located in '/src/test'. 
-- Added Webpack config for dev prod and basic
-- Described application launch process and commands what we have (below)
-- Described structure of our project
+- prepared travis-CI pipeline settings
+- added installation step
+- added linter step
+- add automation tests step and add coverage report
+- encountered difficulties while setting up jest - project coverage does not reach 40% with tests,
+so the following points ("add deployment to the GitHub pages" and
+"implement tests for our functionality") weren't done
 
-
-#### Structure of the project
-
-    ├── config                              # Webpack configuration files
-    ├── public                              # Compiled files
-    ├── src                                 # Source files
-    │   ├── css                             # result css
-    │   ├── helpers                         # js common functions
-    │   ├── img                             # images
-    │   ├── js                              # js classes
-    │   │   ├── controller                  # controller
-    │   │   ├── models                      # models
-    │   │   ├── view                        # view
-    │   │   ├── common.js                   # Main js file
-    │   ├── root                            # js config files
-    │   ├── static                          # static files
-    │   ├── styles                          # resource folder for css/scss
-    │   │   ├── scss                        # scss files
-    │   │   │   ├── modules                 # scss modules
-    │   │   │   ├── utils                   # scss utils 
-    │   │   │   ├── main.scss               # main scss file
-    │   ├── test                            # Automated tests
-    │   ├── index.html                      # Main html page
-    │   ├── index.js                        # Main js file
-    ├── .babelrc                            # Babel file
-    ├── .eslintrc                           # Eslint file
-    └── README.md
