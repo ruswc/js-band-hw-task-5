@@ -21,4 +21,4 @@
 - add automation tests step and add coverage report
 - Test coverage reaches about 40%
 
-**The application can be checked at: ** https://ruswc.github.io/js-band-hw-task-5/index.html
+**The application can be checked at:** https://ruswc.github.io/js-band-hw-task-5/index.html
