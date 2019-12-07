@@ -1,4 +1,4 @@
-# Homework 5 (https://travis-ci.com/ruswc/js-band-hw-task-5.svg?branch=master)
+# Homework 5 ![](https://travis-ci.com/ruswc/js-band-hw-task-5.svg?branch=master)
 ## js-band-hw-task-5
 
 > We prepared quality checking systems, like eslint, jest and now. We should prepare CI/CD setting for more effective delivery process. We are going to prepare it for our PoC. And additionally, we should start to write unit tests.
