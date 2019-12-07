@@ -1,8 +1,7 @@
-import { Transport } from './Transport';
 import { clearFormField, renderList } from '../../helpers/common.helper';
+import { Transport } from './Transport';
 
-
-class Truck extends Transport {
+export class Truck extends Transport {
   constructor(options) {
     super(options);
     this.licensePlate = options.licensePlate;
@@ -13,19 +12,6 @@ class Truck extends Transport {
     return `${super.showAverageSpeed()}km`;
   }
 }
-
-const DEFAULT_TRUCK = new Truck({
-  id: '321-542-860',
-  model: 'KFO 354',
-  licensePlate: 'AA 6324 II',
-  producedYear: '2018',
-  capacity: '50000',
-  averageSpeed: '130',
-  typeOfGas: 'gasoline'
-});
-DEFAULT_TRUCK.saveInLocalStorage();
-
-renderList();
 
 // new truck creation
 export const saveTruck = function saveTruck() {
@@ -51,3 +37,14 @@ export const saveTruck = function saveTruck() {
 
   renderList();
 };
+
+export const DEFAULT_TRUCK = new Truck({
+  id: '321-542-860',
+  model: 'KFO 354',
+  licensePlate: 'AA 6324 II',
+  producedYear: '2018',
+  capacity: '50000',
+  averageSpeed: '130',
+  typeOfGas: 'gasoline'
+});
+DEFAULT_TRUCK.saveInLocalStorage();

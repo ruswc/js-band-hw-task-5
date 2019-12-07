@@ -34,5 +34,5 @@
     "no-param-reassign": 0,
     "no-prototype-builtins": "off",
     "import/prefer-default-export": "off"
-  }
+  },
 }

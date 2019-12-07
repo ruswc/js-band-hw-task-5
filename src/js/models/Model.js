@@ -1,5 +1,5 @@
 export class Model {
-  // constructor() {
-  //
-  // }
+  constructor(options) {
+    this.property = options.property;
+  }
 }

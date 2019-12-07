@@ -1,8 +1,7 @@
 import { clearFormField, renderList } from '../../helpers/common.helper';
 import { Transport } from './Transport';
 
-
-class Ship extends Transport {
+export class Ship extends Transport {
   constructor(options) {
     super(options);
     this.snName = options.snName;

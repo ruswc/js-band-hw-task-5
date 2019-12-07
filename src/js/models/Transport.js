@@ -1,5 +1,3 @@
-import { clearFormField } from '../../helpers/common.helper';
-
 export class Transport {
   static _randVal(min, max) {
     const rand1 = min + Math.random() * (max + 1 - min);

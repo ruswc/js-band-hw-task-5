@@ -1,6 +1,6 @@
 import { clearFormField } from '../../helpers/common.helper';
 
-class Cost {
+export class Cost {
   constructor(options) {
     this.transportModel = options.transportModel;
     this.costPerKg = options.costPerKg;
@@ -28,13 +28,15 @@ if (indexes.length > 0) {
 }
 
 // render list
-function renderList() {
+export function renderList() {
   const keys = Object.keys(localStorage);
   const transpIndexes = keys.filter((val) => val.indexOf('jsbandcost') !== -1);
   const listContainer = document.getElementById('costlist');
 
   // clean container
-  listContainer.innerHTML = '';
+  if (listContainer) {
+    listContainer.innerHTML = '';
+  }
 
   for (let i = 0, { length } = transpIndexes; i < length; i += 1) {
     const plate = document.createElement('div');

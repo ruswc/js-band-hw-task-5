@@ -1,9 +1,10 @@
 export const clearFormField = function clearFormField(elements) {
-  for (let i = 0, { length } = elements; i < length; i += 1) {
+  for (let i = 0, length = elements; i < length; i += 1) {
     if (elements[i].type === 'text' || elements[i].type === 'select-one') {
       elements[i].value = '';
     }
   }
+  return true;
 };
 
 // render list
@@ -30,12 +31,7 @@ export function renderList() {
         plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
       }
     });
-
-    // for (const key in obj) {
-    //   if (key !== 'unique') {
-    //     plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
-    //   }
-    // }
     container.append(plate);
   }
+  return true;
 }

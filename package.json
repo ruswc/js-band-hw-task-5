@@ -1,13 +1,13 @@
 {
   "name": "singletonfactory",
   "version": "1.0.0",
-  "description": "js-band-hw-task-3",
+  "description": "js-band-hw-task-5",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
     "build": "webpack --config ./config/webpack.build.conf.js",
     "test": "jest",
-    "lint": "eslint ./src --fix"
+    "lint": "eslint ./src --fix --ignore-path .eslintignore"
   },
   "browserslist": [
     "> 1%",
@@ -19,6 +19,7 @@
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "autoprefixer": "^9.7.2",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "commitizen": "^4.0.3",
     "copy-webpack-plugin": "^5.0.5",
@@ -31,7 +32,7 @@
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "file-loader": "^4.3.0",
     "html-webpack-plugin": "^3.2.0",
